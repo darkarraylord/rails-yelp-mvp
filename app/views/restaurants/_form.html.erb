@@ -1,0 +1,8 @@
+<%= form_for(@restaurant) do |f| %>
+  <div class="form-group">
+  <%= f.text_field :name, placeholder: "Enter the restaurant name", html: {:class => 'form-group'} %>
+  <%= f.text_field :address, placeholder: "Enter the address", html: {:class => 'form-control'} %>
+  <%= f.submit "Save Restaurant" %>
+  </div>
+<% end %>
+<%= link_to "Cancel", restaurants_path %>

@@ -1,0 +1,6 @@
+<div class="container">
+  <h1><%= @restaurant.name %></h1>
+  <p><%= @restaurant.address %></p>
+</div>
+<%= link_to "Edit", edit_restaurant_path(id: params[:id]) %>
+<%= link_to "Go back", :back %>
